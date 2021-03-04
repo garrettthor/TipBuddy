@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tip Buddy</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    </head>
+    
+    <body>
+        <header>
+            <h1>Tip Buddy</h1>
+        </header>
+        
+        <main>
+
+            <h2>Step One: Create Shift Logs</h2>
+
+            <fieldset>
+                <legend>Shift Info</legend>
+                <label for="create-name">Name</label>
+                <input id="create-name" type="text" name="create-name" value="" placeholder="Employee Name">
+                
+                <select id="create-job" name="job">
+                    <option value="Bartender" selected>Bartender</option>
+                    <option value="Barback">Barback</option>
+                </select>
+                
+                <label for="create-hours">Hours</label>
+                <input id="create-hours" type="number" name="create-hours" value="" min="0">
+
+                <label for="create-tips">Tips</label>
+                <input id="create-tips" type="number" name="create-tips" value="" min="0">
+
+                <button id="create-employee" type="button" name="create-employee">Create Employee Shift Log</button>
+
+            </fieldset>
+
+            <section class="readouts">
+
+                <h2>Shift Stats:</h2>
+
+                <section class="bartender-readouts">
+                    <h3>Bartenders</h3>
+                    <ul id="bartender-stats-ul"></ul>
+                </section>
+
+                <section class="barback-readouts">
+                    <h3>Barbacks</h3>
+                    <ul id="barback-stats-ul"></ul>
+                </section>
+
+                <section class="hour-pool-stats">
+                    <h3>Total Hours</h3>
+                    <div id="hour-pool-display"></div>
+                </section>
+
+                <section class="tip-pool-stats">
+                    <h3>Total Tips</h3>
+                    <div id="tip-pool-display"></div>
+                </section>
+
+            </section>
+
+            <h2>Step Two: Calculate Tip out</h2>
+            <button id="finish" type="button" name="finish">Calculate Final Tip out</button>
+
+            <section class="tipouts">
+
+                <h2>Tipouts:</h2>
+
+                <section class="bartender-tipouts">
+                    <h3>Bartender Tips</h3>
+                </section>
+
+                <section class="barback-tipouts">
+                    <h3>Barback Tips</h3>
+                </section>
+
+            </section>
+
+        </main>
+        
+            
+
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+
+</html>

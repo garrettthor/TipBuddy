@@ -1,0 +1,92 @@
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+.readouts {
+    margin-top: 15px;
+    padding: 0 20px;
+    height: 50%;
+    display: flex;
+    width: 100%;
+}
+
+.bartender-readouts {
+    margin: 3px;
+    display: block;
+    background: rgb(181, 231, 242);
+    border-radius: 15px;
+    width: 40%;
+}
+
+.bartender-readouts li, .barback-readouts li{
+    color: rgb(61, 61, 61);
+    margin-left: 20%;
+}
+
+.barback-readouts {
+    margin: 3px;
+    display: block;
+    background: rgb(242, 228, 181);
+    border-radius: 15px;
+    width: 40%;
+}
+
+.hour-pool-stats {
+    margin: 3px;
+    display: block;
+    background: rgb(105, 140, 148);
+    border-radius: 15px;
+    width: 10%;
+}
+
+.tip-pool-stats {
+    margin: 3px;
+    display:block;
+    background: rgb(158, 149, 118);
+    border-radius: 15px;
+    width: 10%;
+}
+
+.readouts h5 {
+    text-align: center;
+}
+
+.readouts div {
+    text-align: center;
+    font-size: 26px;
+}
+
+input {
+    width: 8em;
+}
+
+.tipouts {
+    margin-top: 15px;
+    padding: 0 20px;
+    height: 50%;
+    display: flex;
+    width: 100%;
+}
+
+.bartender-tipouts {
+    margin: 3px;
+    display: block;
+    background: rgb(28, 125, 145);
+    border-radius: 15px;
+    width: 40%;
+}
+
+.barback-tipouts {
+    margin: 3px;
+    display: block;
+    background: rgb(160, 145, 94);
+    border-radius: 15px;
+    width: 40%;
+}
