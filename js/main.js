@@ -1,3 +1,7 @@
+//Going to need to re-structure.  Create child classes for diff jobs so they have separate hour pools.
+
+
+
 //Tip calculator.
 
 let employees = []
