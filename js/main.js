@@ -3,21 +3,28 @@
 let employees = []
 
 class Employee{
-    constructor(name, job, hours, tips){
+    constructor(name, hours, tips){
         this.name = name
-        this.job = job
         this.hours = hours
         this.tips = tips
     }
 }
 
-// Double checking to ensure my git branches are separate and safe...
+class Bartender extends Employee{
+    constructor(name, hours, tips){
+        super(name, hours, tips)
+    }
+}
+
+//I'm gonna have to start fuckin over...
 
 // Create a new object with the employee's shift info
 
 document.querySelector('#create-employee').addEventListener('click', createEmployee)
 
 function createEmployee(){
+
+
     let name = document.querySelector('#create-name').value
     let job = document.querySelector('#create-job').value
     let hours = Number(document.querySelector('#create-hours').value)
