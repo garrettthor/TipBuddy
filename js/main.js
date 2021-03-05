@@ -11,6 +11,8 @@ class Employee{
     }
 }
 
+// Double checking to ensure my git branches are separate and safe...
+
 // Create a new object with the employee's shift info
 
 document.querySelector('#create-employee').addEventListener('click', createEmployee)
